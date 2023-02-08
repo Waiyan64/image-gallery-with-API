@@ -3,10 +3,10 @@ import React from 'react'
 const ImageCard = ({image}) => {
   const tags = image.tags.split(',');
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm overflow-hidden shadow-2xl rounded-xl">
       <img src={image.webformatURL} alt="" className="w-full"/>
       <div className="px-6 py-4">
-        <div className="font-bold text-purple-500 text-xl mb-2">
+        <div className="font-bold text-xl mb-2 text-indigo-700">
           Photo by {image.user}
         </div>
         <ul>
